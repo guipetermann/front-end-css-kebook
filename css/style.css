@@ -1,0 +1,181 @@
+body {
+  margin: 0 auto;
+  font-size: 16px;
+}
+a,
+p,
+h1,
+h2 {
+  color: #fff;
+  font-family: sans-serif;
+}
+/*Menu*/
+.menu {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  height: 100px;
+  max-width: 1319px;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  max-width: 120px;
+  margin-right: 34px;
+}
+.esconder {
+  display: none;
+}
+.btn {
+  background-color: unset;
+  border: unset;
+  display: flex;
+  align-items: center;
+  font-size: 1.01rem;
+}
+.btn span {
+  font-size: 2.5rem;
+  line-height: 0;
+}
+.btn span::before {
+  content: url("../img/menu-burguer.png");
+}
+.menu-paginas {
+  width: 50%;
+}
+.menu-paginas > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-paginas > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.menu-paginas > ul > li {
+  font-size: 1.3rem;
+}
+.div-busca-login {
+  display: flex;
+  min-width: 25%;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  padding-left: 50px;
+}
+.div-busca > button {
+  background-color: unset;
+  border: unset;
+}
+.div-busca .icone-busca::before {
+  content: url("../img/search.png");
+}
+.div-login {
+  padding: 0 1.5rem !important;
+  border: 2px solid #fff !important;
+  font-size: 0.94rem !important;
+  border-radius: 10rem;
+  min-height: 52px !important;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.div-login a {
+  display: flex;
+  align-items: center;
+}
+.div-login span::before {
+  content: url("../img/login.png");
+}
+/*Conteudo*/
+.first-section {
+  background-image: url("../img/back-top-home.png");
+  background-size: cover !important;
+  background-position: center center !important;
+  display: flex;
+  justify-content: center;
+}
+.div-conteudo {
+  display: flex;
+  height: 507px;
+  align-items: center;
+  justify-content: center;
+}
+.div-conteudo > div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.bloco-esquerda {
+  width: 49%;
+}
+.titulo-primeiro {
+  font-size: 5rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.texto-primeiro {
+  font-size: 1.3rem;
+}
+.btn-cta {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.compra {
+  width: 40%;
+  font-size: 1.3rem;
+  padding-right: 15px;
+}
+.compra > span {
+  padding: 0.9375rem 2.1rem !important;
+  border-radius: 10rem !important;
+  font-weight: bold;
+  background-image: linear-gradient(90deg, #f00, #f00, #ffb600);
+  background-size: 200%;
+  background-position: left;
+  transition: background-position 1s;
+}
+.compra > span:hover {
+  background-position: right;
+}
+.ensinar {
+  font-size: 1.3rem;
+  padding-right: 15px;
+}
+.ensinar > span {
+  border: 2px solid;
+  padding: 1rem 1.5rem !important;
+  border-radius: 10rem !important;
+  transition: all 0.6s;
+}
+.ensinar > span:hover {
+  background-color: red;
+  border-color: red;
+}
+.texto-cadastra > a {
+  font-weight: bold;
+}
+.bloco-direita > img {
+  max-width: 457px;
+  margin-bottom: -227px;
+}
+.second-section {
+  display: flex;
+  justify-content: center;
+}
+.second-section > div {
+  display: flex;
+  padding-top: 4.4rem;
+  max-width: 1170px;
+}
+.second-section div > h2,
+.second-section div > p {
+  color: #3f4351;
+}
+.blocos {
+  width: 25%;
+  padding: 0px 15px;
+}
