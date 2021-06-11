@@ -1,6 +1,9 @@
 .menu-mobile {
   display: none;
 }
+a {
+  text-decoration: unset !important;
+}
 body {
   margin: 0 auto;
   font-size: 16px;
@@ -42,7 +45,7 @@ h2 {
   border-radius: 0 3rem 3rem 3rem;
   padding: 3rem;
 }
-.dropdow-menu {
+.ativo .dropdow-menu {
   position: absolute;
   background-color: #fff;
   z-index: 9999999;
@@ -240,7 +243,9 @@ h2 {
 }
 @media (max-width: 765px) {
   .menu-mobile {
-    display: unset;
+    display: flex;
+    position: absolute;
+    width: 100%;
   }
   .menu {
     display: none;
@@ -304,5 +309,106 @@ h2 {
   }
   .second-section > div > .bl {
     text-align: center;
+  }
+  .menu-mobile a {
+    color: #fff;
+  }
+  .div-conteudo {
+    height: unset;
+    flex-direction: column;
+    margin-top: 91px;
+  }
+  .sanduiche {
+    background-color: #f2f2f2;
+    margin: 2px;
+    width: 2.5rem;
+    height: 0.4rem;
+  }
+  .sanduiche-menu {
+    transition: all 0.5 ease;
+    width: max-content;
+    border-radius: 50%;
+    padding: 2rem 0;
+    transition: 0.7s;
+  }
+  .menu-mobile > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .div-login {
+    border: unset !important;
+  }
+  .logo {
+    margin: unset;
+  }
+  .dropdow-menu-mobile {
+    background-color: #ff8000 !important;
+  }
+  [data-dropdown-mobile] .dropdow-menu-mobile {
+    display: none;
+  }
+  [data-dropdown-mobile] {
+    position: relative;
+  }
+  [data-dropdown-mobile].ativoM .dropdow-menu-mobile {
+    display: block;
+    padding: 3rem;
+    min-width: 250px;
+    width: 100%;
+  }
+  .dropdow-menu-mobile {
+    position: absolute;
+    background-color: #fff;
+    z-index: 9999999;
+  }
+
+  .dropdow-menu > ul {
+    display: none;
+  }
+  .dropdow-menu-mobile > div > a {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .sub-menu-mobile {
+    display: flex;
+    justify-content: center;
+  }
+  .sub-menu-mobile {
+    display: flex;
+    justify-content: center;
+    padding: 0.6rem;
+  }
+  .ativoM .div-busca-login span {
+    display: none;
+  }
+  .dropdow-menu-mobile .dropdow-menu p {
+    text-align: center;
+    color: #fff;
+  }
+  .sub-menu-mobile.btn-compra > a {
+    background-color: #ff5d00;
+    padding: 0.95rem 1.6rem;
+    border: 0;
+    border-radius: 10rem;
+    font-weight: unset;
+  }
+  .sub-menu-mobile.btn-login > a {
+    border: 1px solid #fff;
+    padding: 0.81rem 1.4rem;
+    border-radius: 5rem;
+    font-weight: unset;
+  }
+  .dropdow-menu.ativoM ul {
+    display: block;
+    border-radius: 0 3rem 3rem 3rem;
+  }
+  .dropdow-menu ul li {
+    width: 100% !important;
+    text-align: center;
+  }
+  .dropdow-menu li a {
+    color: #fff !important;
   }
 }
